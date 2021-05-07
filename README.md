@@ -8,7 +8,7 @@ Semantic Segmentation is a fascinating application of deep learning and has beco
 
 Inferring the knowledge about an image has a number of applications including in autonomous driving. SemSeg can help autonomous vehicles learn about its surroundings, specifically inferring the information about free road space and objects around it. Successful and accurate pixel-level prediction however depends on how well the network has been trained. Thanks to organizations like Cityscapes and KITTI, today we have large fine-annotated pixel-level datasets available to work with.
 
-Here I am presenting a 20 layer CNN architecture I created: SSNet. This architecture is inspired by VGG-16 and SegNet and is shown below. This is an encoder-decoder architecture in which we have 10 encoder layers followed by 10 corresponding decoder layers. Number of filters for each encoder layer are: first 2 layers - 64 filters, next 2 layers - 128 filters, next 3 layers - 256 filters, next 3 layers - 512 filters. The corresponding decoder have same number of filters. The decoder layers are followed by a softmax prediction layer with number of filters equal to the number of prediction classes.
+Here I have implemented SSNet. This architecture is a combination of VGG-16 and SegNet and is shown below. This is an encoder-decoder architecture in which we have 10 encoder layers followed by 10 corresponding decoder layers. Number of filters for each encoder layer are: first 2 layers - 64 filters, next 2 layers - 128 filters, next 3 layers - 256 filters, next 3 layers - 512 filters. The corresponding decoder have same number of filters. The decoder layers are followed by a softmax prediction layer with number of filters equal to the number of prediction classes.
 
 ![](img/SSNet.png)
 
